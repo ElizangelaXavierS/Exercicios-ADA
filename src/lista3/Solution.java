@@ -23,13 +23,15 @@ public class Solution {
     }
 
     public static boolean eUmTriangulo(int[] input) {
-
-        if (input[0] < (input[1] + input[2]) && input[1] < (input[0] + input[2]) && input[2] < (input[1] + input[0])) {
-            return true;
-        } else {
-            return false;
-        }
+        return (input[0] < (input[1] + input[2]) && input[1] < (input[0] + input[2]) && input[2] < (input[1] + input[0]));
     }
+
+    public static int idadeEmDias(int[] input) {
+        int diasDeVida = input[0] * 365 + input[1] * 30 + input[2];
+        return diasDeVida;
+    }
+
+
 
 }
 
