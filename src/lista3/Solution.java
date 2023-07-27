@@ -31,7 +31,25 @@ public class Solution {
         return diasDeVida;
     }
 
-
-
+    public static String mediaAproveitamento(double[] input) {
+         double media_aproveitamento = (input[0]+ input[1]+ input[2] + input[3])/4;
+         String conceito = "";
+         if (media_aproveitamento >= 9.0) {
+             conceito = "A";
+         } else if (media_aproveitamento >= 7.5 && media_aproveitamento < 9.0) {
+             conceito = "B";
+         }else if (media_aproveitamento >= 6.0 &&media_aproveitamento < 7.5) {
+             conceito = "C";
+         }else if (media_aproveitamento < 6.0) {
+             conceito = "D";
+         }else {
+             System.out.println("Media invalida");
+         }
+        return conceito;
+    }
 }
+
+
+
+
 

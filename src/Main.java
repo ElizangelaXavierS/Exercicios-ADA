@@ -8,7 +8,7 @@ public class Main {
       // int[] input = {3,3,5};
        // System.out.println(Solution.eUmTriangulo(input));
 
-        int[] input = {10, 8, 16};
-       System.out.println(Solution.idadeEmDias(input));
+        double[] input = {2.0, 5.0, 8.0, 6.0};
+       System.out.println(Solution.mediaAproveitamento(input));
     }
 }
